@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Certficate Issue</title>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-3">
+          <h1 class="text-center">Student List</h1>
+          <table style="width: 50%;">
+              <td><a href="index.html"><h4>Home</h4></a></td>
+              <td><a href="list.html"> <h4>Certificate Issue</h4></a></td>
+          </table>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+      <div id="petsRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="petTemplate" style="display: none;">
+      <div class="col-sm-5 col-md-3 col-lg-4">
+        <div class="panel panel-default panel-pet">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scrappy</h3>
+          </div>
+          <div class="panel-body" >
+            <!--<img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="data:image/jpeg;base64,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" data-holder-rendered="true">-->
+            <br/>
+            <strong>Roll No</strong>: <span class="pet-rollno">17wh1a0540</span><br/>
+            <strong>Age</strong>: <span class="pet-age">3</span><br/>
+            <strong>Branch</strong>: <span class="pet-branch">CSE</span><br/>
+            <strong>Validity</strong>: <span class="pet-validity">2017-21</span><br/>
+            <strong>address</strong>: <span class="pet-address">Warren, MI</span><br/><br/>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
